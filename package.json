@@ -1,0 +1,14 @@
+{
+  "name": "frontendmentor",
+  "version": "1.0.0",
+  "description": "frontendmentor challenges",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=${PORT} --host=0.0.0.0 ."
+  },
+  "author": "Lautaro Barba",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}

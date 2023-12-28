@@ -1,0 +1,16 @@
+version: "3.8"
+name: frontendmentor
+services:
+  frontendmentor:
+    container_name: frontendmentor
+    image: node:18
+    working_dir: /app
+    command: bash -c "npm install && npm run start"
+    restart: always
+    env_file: .env
+    environment:
+      - PORT=${PORT}
+    ports:
+      - ${PORT}:${PORT}
+    volumes:
+      - .:/app

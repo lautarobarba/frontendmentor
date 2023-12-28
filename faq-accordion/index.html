@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="/index/normalize.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="card">
+        <h1 class="title-container">
+          <img
+            src="./assets/images/icon-star.svg"
+            alt="icon-star"
+            title="icon-star"
+            class="title-star"
+          />
+          <span class="title-text">FAQs</span>
+        </h1>
+
+        <ul class="question-list">
+          <li>
+            <div class="question-container" data-question-id="1">
+              <h3 class="question-text" onclick="toggleQuestion(1)">
+                What is Frontend Mentor, and how will it help me?
+              </h3>
+              <img
+                src="./assets/images/icon-plus.svg"
+                alt="icon-plus"
+                title="icon-plus"
+                class="question-icon"
+                onclick="toggleQuestion(1)"
+                data-hidden="true"
+                data-icon-type="show-icon"
+              />
+              <img
+                src="./assets/images/icon-minus.svg"
+                alt="icon-minus"
+                title="icon-minus"
+                class="question-icon"
+                onclick="toggleQuestion(1)"
+                data-hidden="false"
+                data-icon-type="hide-icon"
+              />
+            </div>
+            <p class="answer-text" data-answer-id="1" data-hidden="false">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building.
+            </p>
+          </li>
+
+          <hr class="separator" />
+
+          <li>
+            <div class="question-container" data-question-id="2">
+              <h3 class="question-text" onclick="toggleQuestion(2)">
+                Is Frontend Mentor free?
+              </h3>
+              <img
+                src="./assets/images/icon-plus.svg"
+                alt="icon-plus"
+                title="icon-plus"
+                class="question-icon"
+                onclick="toggleQuestion(2)"
+                data-hidden="false"
+                data-icon-type="show-icon"
+              />
+              <img
+                src="./assets/images/icon-minus.svg"
+                alt="icon-minus"
+                title="icon-minus"
+                class="question-icon"
+                onclick="toggleQuestion(2)"
+                data-hidden="true"
+                data-icon-type="hide-icon"
+              />
+            </div>
+            <p class="answer-text" data-answer-id="2" data-hidden="true">
+              Yes, Frontend Mentor offers both free and premium coding
+              challenges, with the free option providing access to a range of
+              projects suitable for all skill levels.
+            </p>
+          </li>
+
+          <hr class="separator" />
+
+          <li>
+            <div class="question-container" data-question-id="3">
+              <h3 class="question-text" onclick="toggleQuestion(3)">
+                Can I use Frontend Mentor projects in my portfolio?
+              </h3>
+              <img
+                src="./assets/images/icon-plus.svg"
+                alt="icon-plus"
+                title="icon-plus"
+                class="question-icon"
+                onclick="toggleQuestion(3)"
+                data-hidden="false"
+                data-icon-type="show-icon"
+              />
+              <img
+                src="./assets/images/icon-minus.svg"
+                alt="icon-minus"
+                title="icon-minus"
+                class="question-icon"
+                onclick="toggleQuestion(3)"
+                data-hidden="true"
+                data-icon-type="hide-icon"
+              />
+            </div>
+            <p class="answer-text" data-answer-id="3" data-hidden="true">
+              Yes, you can use projects completed on Frontend Mentor in your
+              portfolio. It's an excellent way to showcase your skills to
+              potential employers!
+            </p>
+          </li>
+
+          <hr class="separator" />
+
+          <li>
+            <div class="question-container" data-question-id="4">
+              <h3 class="question-text" onclick="toggleQuestion(4)">
+                How can I get help if I'm stuck on a challenge?
+              </h3>
+              <img
+                src="./assets/images/icon-plus.svg"
+                alt="icon-plus"
+                title="icon-plus"
+                class="question-icon"
+                onclick="toggleQuestion(4)"
+                data-hidden="false"
+                data-icon-type="show-icon"
+              />
+              <img
+                src="./assets/images/icon-minus.svg"
+                alt="icon-minus"
+                title="icon-minus"
+                class="question-icon"
+                onclick="toggleQuestion(4)"
+                data-hidden="true"
+                data-icon-type="hide-icon"
+              />
+            </div>
+            <p class="answer-text" data-answer-id="4" data-hidden="true">
+              The best place to get help is inside Frontend Mentor's Discord
+              community. There's a help channel where you can ask questions and
+              seek support from other community members.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
